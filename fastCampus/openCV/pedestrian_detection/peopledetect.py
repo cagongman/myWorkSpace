@@ -5,7 +5,7 @@ import cv2
 
 
 # 동영상 불러오기
-cap = cv2.VideoCapture('vtest.avi')
+cap = cv2.VideoCapture('C:/Users/kisub/myWorkSpace/fastCampus/openCV/pedestrian_detection/cafe_cctv_1.mp4')
 
 if not cap.isOpened():
     print('Video open failed!')
