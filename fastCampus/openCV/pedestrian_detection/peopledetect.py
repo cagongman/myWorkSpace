@@ -5,7 +5,7 @@ import cv2
 
 
 # 동영상 불러오기
-cap = cv2.VideoCapture('C:/Users/kisub/myWorkSpace/fastCampus/openCV/pedestrian_detection/cafe_cctv_1.mp4')
+cap = cv2.VideoCapture('./vtest.avi')
 
 if not cap.isOpened():
     print('Video open failed!')
@@ -26,7 +26,7 @@ while True:
 
     # 검출 결과 화면 표시
     for (x, y, w, h) in detected:
-        c = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        c = (255,0,0)
         cv2.rectangle(frame, (x, y, w, h), c, 3)
 
     cv2.imshow('frame', frame)
